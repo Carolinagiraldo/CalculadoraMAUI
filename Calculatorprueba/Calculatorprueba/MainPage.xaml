@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Class="Calculatorprueba.MainPage">
+
+    <StackLayout>
+        <Entry Placeholder="Número 1" Keyboard="Numeric" Text="{Binding Number1}" />
+        <Entry Placeholder="Número 2" Keyboard="Numeric" Text="{Binding Number2}" />
+
+        <Button Text="Sumar" Clicked="SumButton_Clicked" />
+        <Button Text="Restar" Clicked="SubtractButton_Clicked" />
+        <Button Text="Multiplicar" Clicked="MultiplyButton_Clicked" />
+        <Button Text="Dividir" Clicked="DivideButton_Clicked" />
+        <Button Text="Power" Clicked="PowerButton_Clicked" HorizontalOptions="FillAndExpand" />
+        <Button Text="Square Root" Clicked="SquareRootButton_Clicked" HorizontalOptions="FillAndExpand" />
+        <Button Text="Módulo" Clicked="OnModuloClicked" />
+        <Button Text="Valor absoluto" Clicked="OnAbsoluteClicked" />
+        <Button Text="Redondeo" Clicked="OnRoundClicked" />
+        <Button Text="Seno" Clicked="OnSinClicked" />
+        <Button Text="Coseno" Clicked="OnCosClicked" />
+        <Label Text="Resultado: " />
+        <Label Text="{Binding Result}" />
+    </StackLayout>
+</ContentPage>
